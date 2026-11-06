@@ -911,6 +911,12 @@ body.subpage .page-intro{padding-top:190px!important;}
 /* typing caret sits on the text line, not below it */
 .tw-caret{vertical-align:baseline;}
 .tw-caret::after{top:auto!important;bottom:-.14em!important;height:.92em!important;width:.42em!important;}
+
+/* AI highlight in the hero */
+@media (min-width:901px){.hero .meta{column-gap:clamp(28px,3vw,48px)!important;}}
+.hero .hero-ai{display:inline-block;align-self:flex-start;margin-bottom:26px;padding:0;border:0;background:linear-gradient(100deg,#f5f5f3 0%,#f5f5f3 40%,#f2a7b3 50%,#f5f5f3 60%,#f5f5f3 100%);background-size:300% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;-webkit-text-stroke:0!important;text-decoration:none;animation:fadeUp 1.2s cubic-bezier(.16,1,.3,1) .05s forwards, aiShine 5.5s ease-in-out 2.2s infinite;}
+@keyframes aiShine{0%{background-position:100% 0;}40%,100%{background-position:0% 0;}}
+@media (prefers-reduced-motion: reduce){.hero .hero-ai{animation:fadeUp 1.2s cubic-bezier(.16,1,.3,1) .05s forwards;}}
 </style>
 </head>
 <body>
@@ -938,8 +944,9 @@ body.subpage .page-intro{padding-top:190px!important;}
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-left">
+        <a class="hero-kicker hero-ai" href="#ai">Empowered by AI</a>
         <h1><span class="line"><span>The systems</span></span><span class="line"><span>government runs</span></span><span class="line"><span>on.</span></span></h1>
-        <p class="lead">Aeon Trident Solutions designs and builds the software, data, and infrastructure that public sector organizations depend on to operate mission-critical work reliably, securely, and at scale.</p>
+        <p class="lead">Aeon Trident Solutions designs and builds the AI-enabled software, data, and infrastructure that public sector organizations depend on to operate mission-critical work reliably, securely, and at scale.</p>
         <div class="cta-row">
           <a href="#capabilities" class="btn btn-outline-light">View capabilities</a>
           <a href="#contact" class="btn btn-invert">Request a callback</a>
@@ -971,6 +978,7 @@ body.subpage .page-intro{padding-top:190px!important;}
     <div class="meta">
       <div><b>Systems.</b> Architecture &amp; modernization</div>
       <div><b>Data.</b> Intelligence &amp; decision support</div>
+      <div><b>AI.</b> Responsible automation</div>
       <div><b>Delivery.</b> Program execution</div>
       <div class="meta-tag">Government technology &amp; consulting · Federal · State · Local</div>
     </div>
